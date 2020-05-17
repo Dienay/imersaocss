@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    /*background-image: url('../img/fundo.jpg');*/
     background-color: #2E5E72;
+    background-image: url('../img/fundo.jpg');
     background-size: auto 100vh;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 14px;
@@ -81,36 +81,38 @@ a:hover {
 .site-subtitle {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8em;
+    line-height: 1.5em;
 }
 
 .portfolio {
     padding: 2em;
-    height: 100vh;
+    height: calc(100vh -48px);
 }
 
 .portfolio h2 {
     color: aliceblue;
+    font-family: 'Roboto', sans-serif;
     font-size: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     }
 
-.portfolio  .grid {
-    align-content: center;
+.portfolio .grid {
     display: grid;
     gap: 2em;
+    height: calc(100vh - 8em - 60px);
     justify-content: center;
-    height: calc(100vh - 8em -44px);
 }
 
-@media (min-width: 524px) {
+@media (min-width: 560px) {
     .portfolio  .grid {
-        grid-template-columns: 200px 200px;
+        align-content: center;
+        grid-template-columns: 240px 240px;
     }
 }
 
-@media (min-width: 790px) {
+@media (min-width: 880px) {
     .portfolio  .grid {
-        grid-template-columns: repeat(3, 200px);
+        grid-template-columns: repeat(3, 260px);
     }
 }
 
@@ -119,6 +121,9 @@ a:hover {
 }
 
 .img-portfolio {
-    height: 140px;
-    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    width: 240px;
 }
+
