@@ -151,7 +151,7 @@ a {
 
 .sobre .avatar img {
     width: 300px;
-    clip-path: polygon(100% 0%, 70% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    border-radius: 50%;
 }
 
 .portfolio .grid {
