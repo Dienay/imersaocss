@@ -136,6 +136,7 @@ a {
   font-size: 2em;
 }
 
+.portifolio-fundo,
 .sobre-fundo {
     background-color: rgba(255, 255, 255, .7);
 }
