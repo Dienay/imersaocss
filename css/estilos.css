@@ -104,13 +104,22 @@ a {
     line-height: 1.5em;
 }
 
-
+.sobre,
 .contato,
 .portfolio {
   padding: 2em;
   min-height: 100vh;
 }
 
+@media (min-width: 1200px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+}
+
+.sobre h2,
 .contato h2,
 .portfolio h2 {
   font-family: 'Press Start 2P', cursive;
@@ -118,6 +127,31 @@ a {
   margin-bottom: 1.5em;
   margin-top: 30px;
   font-size: 2em;
+}
+
+.sobre p {
+    color: white;
+    margin-bottom: 1em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.sobre a {
+    color: cyan;
+}
+
+.sobre a:hover {
+    text-decoration: underline;
+}
+
+.sobre .avatar {
+    float: right;
+    margin-left: 1em;
+}
+
+.sobre .avatar img {
+    width: 300px;
+    clip-path: polygon(100% 0%, 70% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
 .portfolio .grid {
